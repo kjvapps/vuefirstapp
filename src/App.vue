@@ -1,8 +1,19 @@
 <template>
 <section>
-    <h2>My Friends</h2>
+   <header><h2>My Friends</h2></header>
         <ul>
             <li>
+                <friend-contact
+                name="Manuel Lorenz"
+                phone-number='555-555'
+                email-address='manuel@localhost.com'
+                is-favorite='1'
+                ></friend-contact>
+                <friend-contact
+                name="Julie Jones"
+                phone-number='444-555'
+                email-address='julie@localhost.com'
+                ></friend-contact>
             </li>
         </ul>
    </section>
@@ -31,3 +42,8 @@ export default {
 }
 
 </script>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Jost@display=swap')
+
+</style>
