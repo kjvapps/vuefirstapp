@@ -2,19 +2,14 @@
 <section>
    <header><h2>My Friends</h2></header>
         <ul>
-            <li>
                 <friend-contact
-                name="Manuel Lorenz"
-                phone-number='555-555'
-                email-address='manuel@localhost.com'
-                is-favorite='1'
+                v-for="friend in friends"
+                :key="friend.id"
+                :name="friend.name"
+                :phone-number='friend.phone'
+                :email-address='friend.email'
+                :is-favorite="true" 
                 ></friend-contact>
-                <friend-contact
-                name="Julie Jones"
-                phone-number='444-555'
-                email-address='julie@localhost.com'
-                ></friend-contact>
-            </li>
         </ul>
    </section>
 </template>
